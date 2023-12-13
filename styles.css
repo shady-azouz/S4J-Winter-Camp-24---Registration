@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em; /* Updated font size for desktop */
+}
+
+#cover-photo {
+    width: 100%;
+    height: 300px;
+    background-image: url('assets/cover-photo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#form-container {
+    margin: 20px;
+}
+
+.airtable-embed {
+    width: 100%;
+    height: 90vh;
+    border: 1px solid #ccc;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em; /* Updated font size for mobile */
+    }
+}
