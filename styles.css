@@ -134,4 +134,8 @@ h1 {
     #registerButton {
         width: 90%;
     }
+
+    .popup iframe {
+        width: 90%;
+    }
 }
