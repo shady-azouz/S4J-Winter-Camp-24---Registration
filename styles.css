@@ -1,3 +1,38 @@
+/* Add the following styles for the popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup iframe {
+    width: 80%;
+    height: 80vh;
+    margin: 10vh auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    /* padding: 20px; */
+}
+
+.popup span.close {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Rest of the existing styles */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -58,6 +93,20 @@ h1 {
     border: 1px solid #ccc;
 }
 
+/* Center and style the Register button */
+#registerButton {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
 /* Mobile styles */
 @media only screen and (max-width: 600px) {
     header {
@@ -79,5 +128,10 @@ h1 {
 
     #arabic-content span.face-to-face {
         font-size: 1.3em; /* Larger font size for "Face To Face" on mobile */
+    }
+
+    /* Center and style the Register button on mobile */
+    #registerButton {
+        width: 90%;
     }
 }

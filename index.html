@@ -32,31 +32,16 @@
         </p>
     </div>
 
-    <div id="form-container">
+    <!-- Button to open the popup -->
+    <button id="registerButton">Register Now</button>
+
+    <!-- The popup card -->
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
         <iframe id="airtable-iframe" class="airtable-embed" src="https://airtable.com/embed/appy8AlqGwnuv2m7r/pagH8nKBiRAdMyuEm/form" frameborder="0" scrolling="no" style="background: transparent;"></iframe>
     </div>
 
-    <script>
-        function resizeIframe() {
-            var iframe = document.getElementById('airtable-iframe');
-            var body = iframe.contentDocument.body,
-                html = iframe.contentDocument.documentElement;
-
-            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-
-            iframe.style.height = height + 'px';
-
-            // Iframe comes into full view before allowing the page to scroll
-            if (window.innerHeight > height) {
-                document.body.style.overflowY = 'hidden';
-            } else {
-                document.body.style.overflowY = 'auto';
-            }
-        }
-
-        window.addEventListener('resize', resizeIframe);
-        window.addEventListener('load', resizeIframe);
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
