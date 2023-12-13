@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/s4j-logo.png" type="image/png" sizes="32x32"> <!-- Favicon with specified size -->
-    <title>S4J Winter Camp '24 Registration</title> <!-- Updated page title -->
+    <link rel="icon" href="assets/s4j-logo.png" type="image/png" sizes="32x32">
+    <title>S4J Winter Camp '24 Registration</title>
 </head>
 <body>
 
@@ -17,8 +17,30 @@
     <div id="cover-photo"></div>
 
     <div id="form-container">
-        <iframe class="airtable-embed" src="https://airtable.com/embed/appy8AlqGwnuv2m7r/pagH8nKBiRAdMyuEm/form" frameborder="0" onmousewheel="" style="background: transparent;"></iframe>
+        <iframe id="airtable-iframe" class="airtable-embed" src="https://airtable.com/embed/appy8AlqGwnuv2m7r/pagH8nKBiRAdMyuEm/form" frameborder="0" scrolling="no" style="background: transparent;"></iframe>
     </div>
+
+    <script>
+        function resizeIframe() {
+            var iframe = document.getElementById('airtable-iframe');
+            var body = iframe.contentDocument.body,
+                html = iframe.contentDocument.documentElement;
+
+            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+            iframe.style.height = height + 'px';
+
+            // Iframe comes into full view before allowing the page to scroll
+            if (window.innerHeight > height) {
+                document.body.style.overflowY = 'hidden';
+            } else {
+                document.body.style.overflowY = 'auto';
+            }
+        }
+
+        window.addEventListener('resize', resizeIframe);
+        window.addEventListener('load', resizeIframe);
+    </script>
 
 </body>
 </html>
