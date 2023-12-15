@@ -48,10 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('registerButton').addEventListener('click', openPopup);
 });
 
-function openSocialPopup() {
-    document.getElementById('social-popup-container').style.display = 'block';
-}
-
-function closeSocialPopup() {
-    document.getElementById('social-popup-container').style.display = 'none';
+function openLinkTree() {
+    window.open('https://linktr.ee/s4jmeeting', '_blank');
 }
