@@ -61,3 +61,7 @@ function hideTooltip() {
     var logoContainer = document.getElementById('logo-container');
     logoContainer.classList.remove('tooltip-visible');
 }
+
+function visitSocialMedia() {
+    window.open('https://linktr.ee/s4jmeeting', '_blank');
+}

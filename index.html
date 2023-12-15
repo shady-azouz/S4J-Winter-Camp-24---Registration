@@ -48,15 +48,20 @@
     
 
     <!-- Button to open the popup -->
-    <button id="registerButton">Register Now</button>
+    <footer>
 
-    <!-- The popup card -->
-    <div class="popup" id="popup">
-        <div id="popup-overlay"></div>
-        <span class="close" onclick="closePopup()">&times;</span>
-        <iframe id="airtable-iframe" class="airtable-embed" src="https://airtable.com/embed/appy8AlqGwnuv2m7r/pagH8nKBiRAdMyuEm/form" frameborder="0" scrolling="no" style="background: transparent;"></iframe>
-    </div>
-
+        <button id="registerButton">Register Now</button>
+        
+        <button id="socialMediaButton" onclick="visitSocialMedia()">S4J Social Media</button>
+        
+        <!-- The popup card -->
+        <div class="popup" id="popup">
+            <div id="popup-overlay"></div>
+            <span class="close" onclick="closePopup()">&times;</span>
+            <iframe id="airtable-iframe" class="airtable-embed" src="https://airtable.com/embed/appy8AlqGwnuv2m7r/pagH8nKBiRAdMyuEm/form" frameborder="0" scrolling="no" style="background: transparent;"></iframe>
+        </div>
+        
+    </footer>
 
     <script src="script.js"></script>
 
