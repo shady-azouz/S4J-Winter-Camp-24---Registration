@@ -193,4 +193,9 @@ h1 {
     .popup iframe {
         width: 90%;
     }
+
+    #social-popup {
+        top: 20%;
+        left: 50%;
+    }
 }
