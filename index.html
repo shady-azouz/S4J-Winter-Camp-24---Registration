@@ -10,9 +10,23 @@
 <body>
 
     <header>
-        <img src="assets/s4j-logo.png" alt="Logo" id="logo">
-        <h1>S4J Winter Camp '24</h1>
+        <div id="logo-container" onclick="openSocialPopup()">
+            <img src="assets/s4j-logo.png" alt="Logo" id="logo">
+            <h1>S4J Winter Camp '24</h1>
+        </div>
     </header>
+
+    <div class="social-popup" id="social-popup">
+        <a href="https://www.instagram.com/shabab4jesus_meeting/" target="_blank">
+            <img src="assets/instagram-logo.png" alt="Instagram">
+            Instagram
+        </a>
+        <a href="https://www.facebook.com/shabab4jesus" target="_blank">
+            <img src="assets/facebook-logo.png" alt="Facebook">
+            Facebook
+        </a>
+        <span class="close" onclick="closeSocialPopup()">&times;</span>
+    </div>
 
     <div id="cover-photo"></div>
 

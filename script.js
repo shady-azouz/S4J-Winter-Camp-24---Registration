@@ -47,3 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('registerButton').addEventListener('click', openPopup);
 });
+
+function openSocialPopup() {
+    document.getElementById('social-popup').style.display = 'block';
+}
+
+function closeSocialPopup() {
+    document.getElementById('social-popup').style.display = 'none';
+}
