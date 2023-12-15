@@ -51,3 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
 function openLinkTree() {
     window.open('https://linktr.ee/s4jmeeting', '_blank');
 }
+
+function showTooltip() {
+    var logoContainer = document.getElementById('logo-container');
+    logoContainer.classList.add('tooltip-visible');
+}
+
+function hideTooltip() {
+    var logoContainer = document.getElementById('logo-container');
+    logoContainer.classList.remove('tooltip-visible');
+}

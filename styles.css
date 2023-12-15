@@ -68,6 +68,22 @@ header {
     display: block; /* Show the tooltip on hover */
 }
 
+#logo-container .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#logo-container.tooltip-visible .tooltip {
+    display: block;
+}
+
 
 #logo {
     max-width: 50px;
