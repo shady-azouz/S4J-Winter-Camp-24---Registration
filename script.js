@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function openSocialPopup() {
-    document.getElementById('social-popup').style.display = 'block';
+    document.getElementById('social-popup-container').style.display = 'block';
 }
 
 function closeSocialPopup() {
-    document.getElementById('social-popup').style.display = 'none';
+    document.getElementById('social-popup-container').style.display = 'none';
 }

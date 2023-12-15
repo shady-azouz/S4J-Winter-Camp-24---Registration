@@ -120,8 +120,11 @@ h1 {
 
 /* Add the following styles for the social popup */
 
-#social-popup {
+#social-popup-container {
     display: none;
+}
+
+#social-popup {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -142,7 +145,7 @@ h1 {
 }
 
 #social-popup a img {
-    max-height: 24px; /* Adjust the height as needed */
+    max-height: 30px; /* Adjust the height as needed */
     margin-right: 10px; /* Add spacing between the logo and text */
 }
 
@@ -197,5 +200,10 @@ h1 {
     #social-popup {
         top: 20%;
         left: 50%;
+        font-size: 30px;
+    }
+
+    #social-popup .close {
+        font-size: 25px;
     }
 }
