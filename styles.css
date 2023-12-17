@@ -200,6 +200,13 @@ a:hover {
     color: darkblue;
 }
 
+.signature {
+    color: #a5a5a5;
+    text-align: center;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
 
 
 /* Mobile styles */
