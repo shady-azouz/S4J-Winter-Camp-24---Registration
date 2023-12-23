@@ -238,6 +238,12 @@ a:hover {
     font-size: smaller;
 }
 
+.page-break {
+    width: 80%;
+    margin: 50px auto; /* Adjust margin as needed */
+    border: none;
+    border-top: 1px solid #000; /* Adjust the color and style as needed */
+}
 
 
 /* Mobile styles */
