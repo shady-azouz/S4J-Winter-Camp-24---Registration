@@ -18,27 +18,14 @@ function resizeIframe() {
 }
 
 function openPopup() {
-    document.getElementById('popup').style.display = 'block';
+    document.getElementById('register-popup').style.display = 'block';
 
-    // Add event listener to close the popup when clicking outside of the iframe
-    document.getElementById('popup-overlay').addEventListener('click', closePopupOutside);
+    // Add event listener to close the register-popup when clicking outside of the iframe
+    document.getElementById('register-popup-overlay').addEventListener('click', closePopupOutside);
 }
 
 function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
-
-// Function to close the popup when clicking outside of the iframe
-function closePopupOutside(event) {
-    var iframe = document.getElementById('airtable-iframe');
-    var popup = document.getElementById('popup');
-
-    // Check if the click is outside of the iframe
-    if (!iframe.contains(event.target) && !popup.contains(event.target)) {
-        closePopup();
-        // Remove the event listener to prevent multiple bindings
-        document.getElementById('popup-overlay').removeEventListener('click', closePopupOutside);
-    }
+    document.getElementById('register-popup').style.display = 'none';
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -65,3 +52,16 @@ function hideTooltip() {
 function visitSocialMedia() {
     window.open('https://linktr.ee/s4jmeeting', '_blank');
 }
+
+function openAccountPopup() {
+    var accountPopup = document.getElementById("account-popup");
+    accountPopup.style.display = "block";
+}
+
+// Add the following JavaScript function for closing the account-popup
+
+function closeAccountPopup() {
+    var accountPopup = document.getElementById("account-popup");
+    accountPopup.style.display = "none";
+}
+

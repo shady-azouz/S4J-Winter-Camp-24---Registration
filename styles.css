@@ -161,8 +161,7 @@ footer button {
 
 /* Add the following styles for the buttons */
 
-#registerButton,
-#socialMediaButton {
+.footer-button {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -171,29 +170,40 @@ footer button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2em;
-    transition: background-color 0.3s; /* Add a smooth transition for the background color */
+    transition: background-color 0.3s, linear-gradient 0.3s;
 }
 
-#registerButton {
-    background-color: #4CAF50; /* Green color for Register button */
+#createAccountButton {
+    background: linear-gradient(to right, #346edb, #e73c3c, #e73c3c, #e73c3c, #e73c3c, #346edb);
     color: #fff;
 }
 
+#registerButton {
+    background-color: #4CAF50;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
 #socialMediaButton {
-    background-color: #3498db; /* Blue color for Social Media button */
+    background-color: #3498db;
     color: #fff;
 }
 
 /* Hover styles */
-#registerButton:hover,
-#socialMediaButton:hover {
-    background-color: #45a049; /* Darker green for Register button hover */
-    cursor: pointer; /* Add pointer cursor on hover */
+.footer-button:hover {
+    cursor: pointer;
+}
+
+#createAccountButton:hover {
+    background: linear-gradient(to right, #2e5cb7, #c92a2a, #c92a2a, #2e5cb7);
+}
+
+#registerButton:hover {
+    background-color: #378039;
 }
 
 #socialMediaButton:hover {
-    background-color: #2980b9; /* Darker blue for Social Media button hover */
-    cursor: pointer; /* Add pointer cursor on hover */
+    background-color: #2980b9;
 }
 
 a:hover {
