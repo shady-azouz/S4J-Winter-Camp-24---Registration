@@ -263,7 +263,7 @@ a:hover {
     }
 
     /* Center and style the Register button on mobile */
-    footer button {
+    .footer-button {
         width: 90%;
     }
 
