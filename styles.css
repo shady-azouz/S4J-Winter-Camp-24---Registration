@@ -173,6 +173,7 @@ h1 {
 #register-button-container a {
     color: blue;
     font-size: medium;
+    text-decoration: underline;
 }
 
 #register-button-container a:hover {
