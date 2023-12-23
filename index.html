@@ -50,11 +50,14 @@
     <!-- Button to open the popup -->
     <footer>
 
-        <button class="footer-button" id="registerButton">Register Now</button>
+        <div id="register-button-container">
+            <button class="footer-button" id="registerButton">Register Now</button>
+            <p>if you can't find your name, <a onclick="openAccountPopup()">Create S4J Account</a></p>
+        </div>
         
         <button class="footer-button" id="socialMediaButton" onclick="visitSocialMedia()">S4J Social Media</button>
         
-        <button class="footer-button" id="createAccountButton" onclick="openAccountPopup()">Create S4J Account</button>
+        <!-- <button class="footer-button" id="createAccountButton" onclick="openAccountPopup()">Create S4J Account</button> -->
         
         <!-- The register-popup card -->
         <div class="popup" id="register-popup">

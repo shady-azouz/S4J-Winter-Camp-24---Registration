@@ -143,10 +143,6 @@ h1 {
     font-size: 1.2em;
 }
 
-footer button {
-    width: 20vw;
-}
-
 /* Add the following styles for the logo-container */
 
 #logo-container {
@@ -161,10 +157,33 @@ footer button {
 
 /* Add the following styles for the buttons */
 
+#register-button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#register-button-container p {
+    margin-top: 5px;
+    font-size: small;
+}
+
+#register-button-container a {
+    color: blue;
+    font-size: medium;
+}
+
+#register-button-container a:hover {
+    cursor: pointer;
+    color: darkblue;
+}
+
 .footer-button {
+    width: 25vw;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -181,12 +200,12 @@ footer button {
 #registerButton {
     background-color: #4CAF50;
     color: #fff;
-    margin-bottom: 20px;
 }
 
 #socialMediaButton {
     background-color: #3498db;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 /* Hover styles */
