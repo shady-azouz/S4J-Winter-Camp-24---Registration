@@ -51,6 +51,10 @@ header {
     position: relative; /* Add position relative to create a positioning context for the tooltip */
 }
 
+.face-to-face {
+    font-style: bold;
+}
+
 #logo-container:hover::before {
     content: "Social Media Accounts";
     position: absolute;
