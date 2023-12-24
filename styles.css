@@ -51,7 +51,7 @@ header {
     position: relative; /* Add position relative to create a positioning context for the tooltip */
 }
 
-.face-to-face {
+.bold {
     font-style: bold;
 }
 
