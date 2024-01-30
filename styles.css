@@ -143,11 +143,11 @@ h1 {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Green color */
+    background-color: #306b33; /* Green color */
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor:default;
     font-size: 1.2em;
 }
 
@@ -206,11 +206,6 @@ h1 {
     color: #fff;
 }
 
-#registerButton {
-    background-color: #4CAF50;
-    color: #fff;
-}
-
 #socialMediaButton {
     background-color: #3498db;
     color: #fff;
@@ -224,10 +219,6 @@ h1 {
 
 #createAccountButton:hover {
     background: linear-gradient(to right, #2e5cb7, #c92a2a, #c92a2a, #2e5cb7);
-}
-
-#registerButton:hover {
-    background-color: #378039;
 }
 
 #socialMediaButton:hover {
